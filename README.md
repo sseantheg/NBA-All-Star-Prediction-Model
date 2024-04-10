@@ -25,5 +25,9 @@ There is a total of 5 notebooks for the end-to-end processes of this project. Th
 2. The historical player performance data can be found at backpicks.com. This dataset contains traditional stats as well as advanced stats of NBA players from 1955 to 2019. Data is only accessible for Patreon members of the Thinking Basketball community.
 _Full links of the websites can be found in the documentation pdf file._
 
+
+## D. Future Enhancement
+One random idea that came up out of the blue was to make this project a two step prediction. We can predict the player's later year (define some fix number year after) from the rookie year data, then make the classification based on the later year predicted performance. Will that lead to better performance? also we can do more clustering analysis (to the rookie year or later year data)?
+
 ## D. Demonstration Python program
 A minimalistic Python program named `presentation` was used to demonstrate the outcome of the project. Provides a simple user interface for users to select a player by inputting their name, where the program will produce the prediction result of whether the player will turn into an All-Star player in the future.
