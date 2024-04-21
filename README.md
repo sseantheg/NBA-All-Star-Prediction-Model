@@ -33,3 +33,5 @@ A minimalistic Python program named `presentation` was used to demonstrate the o
 1. One random idea that came up out of the blue was to make this project a two-step prediction. We can predict the player's later year data (define some fixed number year after) from the rookie year data, then make the classification based on the later year predicted performance. Will that lead to better performance? also, we can do more clustering analysis (to the rookie year or later year data)?
 
 2. another random thought: we can do 3 different prediction targets which is to predict the players' likelihood of becoming an all-star in 3 years, 5 years and 7 years. This may cater better to business needs instead of a single target prediction (in this case likelihood in 7 years).
+
+3. should update models to use the SOTA models as well...
