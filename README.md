@@ -17,8 +17,8 @@ There is a total of 5 notebooks for the end-to-end processes of this project. Th
 1. `AllStar Preprocessing`: processing the All-Star list to acquire a single list with two columns - _the year of first All-Star selection_ and _Player Full name_ (unique)
 2. `Historical Data Preprocessing & Integration`: process all the historical data measuring players' performance to acquire a list of all players (in the history) rookie & sophomore year performance metrics. Dealt with missing data, added in All-Star binary column, removed low minutes player (relative to future all-stars).
 3. `AllStar only exploratory & graphs`: Study All-Star players to understand the distributions & tendencies. Performed univariate analysis, bivariate analysis & outlier analysis. Understanding the distribution here helps with outlier removal in the next step, as we don't want to remove all-star data from the dataset.
-4. `MasterData Exploratory, Univariate & Bivariate Analysis, Outlier Removal`: Performed univariate, bivariate, correlation and outlier analysis on the main dataset (future all-stars and non). Heavily correlated fields are dealt with before deploying a feature selection method. Outlier detection by percentile is executed concerning study from notebook #3—final Dataset generated for modeling.
-5. `Modeling`: dealt with class imbalance, tested a few models with a train test split: Logistic Regression, MLPClassifier (NN), Support Vector Machine (SVC), and Random Forest Classifier. Did randomized search for parameter optimization.
+4. `MasterData Exploratory, Univariate & Bivariate Analysis, Outlier Removal`: Performed univariate, bivariate, correlation and outlier analysis on the main dataset (future all-stars and non). Heavily correlated fields are dealt with before deploying a feature selection method. Outlier detection by percentile is executed concerning study from notebook #3—final Dataset generated for modelling.
+5. `Modeling`: dealt with class imbalance, tested a few models with a train test split: Logistic Regression, MLPClassifier (NN), Support Vector Machine (SVC), and Random Forest Classifier. Did a randomized search for parameter optimization.
 
 ## C. Data
 1. The all-star datasets are acquired from a few different websites, namely _data.world_, _kaggle.com_ and _basketball-reference.com_. 
@@ -30,4 +30,6 @@ A minimalistic Python program named `presentation` was used to demonstrate the o
 
 
 ## E. Future Enhancement
-One random idea that came up out of the blue was to make this project a two-step prediction. We can predict the player's later year (define some fix number year after) from the rookie year data, then make the classification based on the later year predicted performance. Will that lead to better performance? also, we can do more clustering analysis (to the rookie year or later year data)?
+1. One random idea that came up out of the blue was to make this project a two-step prediction. We can predict the player's later year data (define some fixed number year after) from the rookie year data, then make the classification based on the later year predicted performance. Will that lead to better performance? also, we can do more clustering analysis (to the rookie year or later year data)?
+
+2. another random thought: we can do 3 different prediction targets which is to predict the players' likelihood of becoming an all-star in 3 years, 5 years and 7 years. This may cater better to business needs instead of a single target prediction (in this case likelihood in 7 years).
